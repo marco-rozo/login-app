@@ -9,7 +9,7 @@ class Snack {
   static show({
     required String content,
     SnackType snackType = SnackType.info,
-    SnackBarBehavior behavior = SnackBarBehavior.fixed,
+    SnackBarBehavior behavior = SnackBarBehavior.floating,
   }) {
     ScaffoldMessenger.of(Get.context!).showSnackBar(
       SnackBar(
@@ -17,6 +17,13 @@ class Snack {
           content,
           textAlign: TextAlign.center,
         ),
+        //Posicionando snackbar no topo
+        margin: EdgeInsets.only(
+          bottom: Get.height - 100,
+          right: 8,
+          left: 8,
+        ),
+        dismissDirection: DismissDirection.endToStart,
         elevation: 2,
         behavior: behavior,
         backgroundColor: _getSnackbarColor(snackType),
@@ -24,7 +31,7 @@ class Snack {
           horizontal: kPadding * 3,
           vertical: kPadding * 2,
         ),
-        margin: const EdgeInsets.only(right: 8, left: 8, bottom: 20),
+        // margin: const EdgeInsets.only(right: 8, left: 8, bottom: 20),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
         ),
