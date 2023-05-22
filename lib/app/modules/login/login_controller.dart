@@ -54,6 +54,11 @@ class LoginController extends GetxController {
           auth!.changeApiToken(value.token);
           auth!.changeIsLogged(true);
           auth!.changeDisplayName(value.name);
+          Snack.show(
+            content: 'Success',
+            snackType: SnackType.success,
+            behavior: SnackBarBehavior.floating,
+          );
           reauth();
         } else {
           Snack.show(
