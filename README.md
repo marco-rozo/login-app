@@ -26,6 +26,9 @@ $ flutter run --release
 ### Obs
 Para realizar a autenticação estou utilizando uma API que pode ser acessada  <a href="https://github.com/marco-rozo/api-express-example">aqui</a>.
 
-Como é uma API simulada o login pode ser feito usando:
-email: marco123@gmail.com
-senha: marco123
+Como é uma API simulada o login pode ser feito usando
+
+- email: marco123@gmail.com
+- senha: marco123
+
+ou pode verificar a lista de usuários <a href="https://github.com/marco-rozo/api-express-example/blob/master/src/data/users.ts">aqui</a>.
