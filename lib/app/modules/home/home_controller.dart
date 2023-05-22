@@ -16,7 +16,6 @@ class HomeController extends GetxController {
 
   logout() async {
     auth!.logout();
-    print(auth!.isLogged());
     Get.offNamed(Routes.LOGIN);
   }
 }
