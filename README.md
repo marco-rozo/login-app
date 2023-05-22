@@ -37,7 +37,7 @@ ou pode verificar a lista de usuários <a href="https://github.com/marco-rozo/ap
 A baseUrl para conexão com a API é definida em 
 ```lib\app\data\providers\api\rest_client.dart```
 
-Para teste no emulador e api local (localhost) deixo o padrão de ```10.0.2.2:PORTA_DA_APLICAÇÃO_BACKEND``` no meu caso a porta é 3000 ficando:
+Para teste no emulador e API local (localhost) deixo o padrão de ```10.0.2.2:PORTA_DA_APLICAÇÃO_BACKEND```, no meu caso a porta é 3000 ficando:
 
 ```
 http://10.0.2.2:3000/
