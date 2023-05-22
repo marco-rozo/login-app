@@ -32,3 +32,13 @@ Como é uma API simulada o login pode ser feito usando
 - senha: marco123
 
 ou pode verificar a lista de usuários <a href="https://github.com/marco-rozo/api-express-example/blob/master/src/data/users.ts">aqui</a>.
+
+# 
+A baseUrl para conexão com a API é definida em 
+```lib\app\data\providers\api\rest_client.dart```
+
+Para teste no emulador e api local (localhost) deixo o padrão de ```10.0.2.2:PORTA_DA_APLICAÇÃO_BACKEND``` no meu caso a porta é 3000 ficando:
+
+```
+http://10.0.2.2:3000/
+```
