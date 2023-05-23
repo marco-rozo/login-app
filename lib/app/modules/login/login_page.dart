@@ -5,7 +5,6 @@ import 'package:login_app/app/widgets/custom_elevated_button.dart';
 import 'package:login_app/app/widgets/custom_input_field.dart';
 import 'package:login_app/core/theme/ui_colors.dart';
 import 'package:login_app/core/theme/ui_styles.dart';
-import 'package:login_app/core/utils/functions/size_config.dart';
 
 class LoginPage extends GetView<LoginController> {
   final _formKey = GlobalKey<FormState>();
@@ -14,8 +13,6 @@ class LoginPage extends GetView<LoginController> {
 
   @override
   Widget build(BuildContext context) {
-    SizeConfig().init(context);
-
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
